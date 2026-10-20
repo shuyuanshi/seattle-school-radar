@@ -80,6 +80,9 @@ uv sync
 # 1. Check system and Chrome Bridge dependencies
 uv run seattle-school-radar doctor
 
+# 1b. Check dependencies with step-by-step setup guide
+uv run seattle-school-radar doctor --setup
+
 # 2. Start an interactive Grill session
 uv run seattle-school-radar grill
 
@@ -107,6 +110,15 @@ uv run ruff check .
 # Run type checker
 uv run basedpyright
 ```
+
+---
+
+## 🔗 Reference Links
+
+- Matt Pocock grill-me (upstream agent skill): https://github.com/mattpocock/skills/tree/main/skills/productivity/grill-me
+- Chrome Bridge / Xiaohongshu skill: https://github.com/shuyuanshi/xiaohongshu-skill
+
+The built-in Matt Pocock Grill Engine works standalone. The upstream grill-me skill is optional for agent users (`npx skills add mattpocock/skills/productivity/grill-me`).
 
 ---
 

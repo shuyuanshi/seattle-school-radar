@@ -72,6 +72,9 @@ metadata:
 # 1. 环境诊断：检查 Chrome Bridge、小红书登录态与核心学区数据
 uv run seattle-school-radar doctor
 
+# 1b. 环境诊断 + 分步安装指引（含 Chrome Bridge 与 grill-me 上游技能）
+uv run seattle-school-radar doctor --setup
+
 # 2. 启动交互式 Grill 质询（支持一键回车采纳推荐方案）
 uv run seattle-school-radar grill
 
@@ -118,3 +121,12 @@ builder = RadarReportBuilder(profile, matched, insights)
 markdown_report = builder.render_markdown()
 discord_report = builder.render_discord_kv_stream()
 ```
+
+---
+
+## 🔗 Reference Links
+
+- Matt Pocock grill-me (upstream agent skill): https://github.com/mattpocock/skills/tree/main/skills/productivity/grill-me
+- Chrome Bridge / Xiaohongshu skill: https://github.com/shuyuanshi/xiaohongshu-skill
+
+Built-in Matt Pocock Grill Engine works standalone. Agent users may optionally install the upstream skill via `npx skills add mattpocock/skills/productivity/grill-me`.

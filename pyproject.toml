@@ -1,0 +1,53 @@
+[project]
+name = "seattle-school-radar"
+version = "1.0.0"
+description = "Greater Seattle Area School & Education Intelligence Radar Agent Skill"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "OpenSource Community" }
+]
+keywords = [
+    "seattle",
+    "k12",
+    "education",
+    "school-district",
+    "bellevue",
+    "lake-washington",
+    "agent-skill",
+    "grill-me",
+    "chrome-bridge",
+    "xiaohongshu"
+]
+dependencies = [
+    "pydantic>=2.0.0",
+    "pyyaml>=6.0",
+    "websockets>=12.0",
+]
+
+[project.scripts]
+seattle-school-radar = "seattle_school_radar.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B"]
+ignore = ["E501"]
+
+[tool.basedpyright]
+pythonVersion = "3.10"
+typeCheckingMode = "basic"
+
+[dependency-groups]
+dev = [
+    "basedpyright>=1.40.2",
+    "pytest>=9.1.1",
+    "ruff>=0.17.1",
+]

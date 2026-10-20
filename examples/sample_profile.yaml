@@ -1,0 +1,20 @@
+# Sample Parent Profile (100% Sanitized & De-anonymized)
+child_age_years: 5.0
+child_stage: "Kindergarten (5 yo)"
+target_entry_year: 2026
+target_districts:
+  - "Lake Washington (LWSD 414)"
+  - "Independent Private"
+budget_type: "Flexible / Pragmatic Mix"
+priorities:
+  academic_rigor: 0.85
+  stem_focus: 0.85
+  well_being_resilience: 0.80
+  bilingual_immersion: 0.20
+  whole_child_inquiry: 0.75
+  parent_involvement_tolerance: 0.40
+specific_interests:
+  - "Robotics & STEM"
+  - "Math Exploration"
+  - "Soccer & Outdoor Science"
+notes: "Kindergarten entry in Redmond area; evaluating Lake Washington community schools vs STEM choice vs Overlake."
